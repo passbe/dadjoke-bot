@@ -1,0 +1,11 @@
+# All IRC options can be set as per Cinch documentation: https://github.com/cinchrb/cinch
+irc:
+    server: "example.net"
+    port: 6697
+    password: ""
+    nick: "dadbot"
+    channels:
+        - "#example"
+    ssl:
+        use: true
+        verify: false
