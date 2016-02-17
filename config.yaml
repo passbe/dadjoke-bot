@@ -9,3 +9,4 @@ irc:
     ssl:
         use: true
         verify: false
+sendkey: "!sendtext"

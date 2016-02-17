@@ -74,6 +74,12 @@ bot = Cinch::Bot.new do
         end
     end
 
+    # Talk through the bot
+    on :private, /^#{config["sendkey"]}/ do |m|
+        p = m.message.match(/^#{config["sendkey"]}\s(#.*?)\s(.*?)$/)
+        Channel(p[1]).send(p[2]) if p.length == 3
+    end
+
 end
 
 # Start bot
