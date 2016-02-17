@@ -74,12 +74,6 @@ bot = Cinch::Bot.new do
         end
     end
 
-    # Be a smug jerk when people say "I'm..."
-    # e.g. "I'm hungry" --> "Hi hungry, I'm dadjoke-bot!"
-    on :message, /^[Ii]'?m (.+)/ do |m, you_are|
-        m.reply("Hi \"#{you_are}\", I'm #{m.bot.nick}!", true)
-    end
-
 end
 
 # Start bot
